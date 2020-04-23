@@ -15,7 +15,6 @@ public interface StudentDAO {
 	
 	
 	
-	
 	StudentsBean login(String email,String password);
 	boolean addBook(BookBean book);
 	boolean removeBook(int bId);
