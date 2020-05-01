@@ -107,7 +107,7 @@ public class LibraryMain {
 
 							do {
 								try {
-									System.out.println("Enter Password : ");
+									System.out.println("Enter Password :");
 									regPassword = scanner.next();
 									validation.validatedPassword(regPassword);
 									flag = true;
@@ -117,7 +117,10 @@ public class LibraryMain {
 								} catch (CommonException e) {
 									flag = false;
 									System.err.println(e.getMessage());
-								}
+								} //catch (javax.xml.bind.CommonException e) {
+									// TODO Auto-generated catch block
+								//	e.printStackTrace();
+								//}
 							} while (!flag);
 
 							do {

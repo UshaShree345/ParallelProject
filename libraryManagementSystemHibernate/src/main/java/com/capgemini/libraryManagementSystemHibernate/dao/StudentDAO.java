@@ -12,10 +12,6 @@ import com.capgemini.libraryManagementSystemHibernate.dto.StudentsBean;
 public interface StudentDAO {
 	
 	boolean register(StudentsBean student);
-	
-	
-	
-	
 	StudentsBean login(String email,String password);
 	boolean addBook(BookBean book);
 	boolean removeBook(int bId);
@@ -33,4 +29,5 @@ public interface StudentDAO {
 	LinkedList<BookIssueDetails> showIssuedBooks();
 	LinkedList<StudentsBean> showStudents();
 	boolean updatePassword(String email,String password,String newPassword,String role);
+
 }

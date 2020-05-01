@@ -40,5 +40,6 @@ public class BookBean {
 	}
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
-	}	
+	}
+	
 }
