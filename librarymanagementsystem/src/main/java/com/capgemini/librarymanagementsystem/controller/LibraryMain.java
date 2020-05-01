@@ -117,7 +117,7 @@ public class LibraryMain {
 								flag = true;
 							} catch (InputMismatchException e) {
 								flag = false;
-								System.err.println("Enter a proper email");
+								System.err.println("Enter proper email such that it should consist of numbers and alphabets");
 							} catch (CommonException e) {
 								flag = false;
 								System.err.println(e.getMessage());
@@ -126,17 +126,20 @@ public class LibraryMain {
 
 						do {
 							try {
-								System.out.println("Enter Password to Register : ");
+								System.out.println("Enter Password :");
 								regPassword = scanner.next();
 								validation.validatedPassword(regPassword);
 								flag = true;
 							} catch (InputMismatchException e) {
 								flag = false;
-								System.err.println("Enter correct Password");
+								System.err.println("Enter correct Password ");
 							} catch (CommonException e) {
 								flag = false;
 								System.err.println(e.getMessage());
-							}
+							} //catch (javax.xml.bind.CommonException e) {
+								// TODO Auto-generated catch block
+							//	e.printStackTrace();
+							//}
 						} while (!flag);
 
 						LibrarianInfo bean = new LibrarianInfo();
